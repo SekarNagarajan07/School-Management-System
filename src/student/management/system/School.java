@@ -20,20 +20,36 @@ public class School {
         totalMoneySpent = 0;
     }
 
+    /**
+     *
+     * @return the list of teachers in the school
+     */
     public List<Teacher> getTeachers() {
         return teachers;
     }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
+    /**
+     * Add a teacher to the element
+     * @param teacher the teacher to be added
+     */
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
     }
 
+    /**
+     *
+     * @return the list of students in the school
+     */
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    /**
+     * Add a student to the school
+     * @param student the student to be added
+     */
+    public void addStudents(Student student) {
+        students.add(student);
     }
 
     public int getTotalMoneyEarned() {
