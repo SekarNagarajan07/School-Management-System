@@ -24,7 +24,32 @@ public class Main {
         studentList.add(srini);
 
         School MahendraSchool = new School(teacherList,studentList);
-//        System.out.println(MahendraSchool.getTotalMoneyEarned());
+
+        ram.payFees(10000);
+        sekar.payFees(5000);
+
+        System.out.println("Mahendra School has earned ₹" +  MahendraSchool.getTotalMoneyEarned());
+
+        System.out.println("Making School pay Salary");
+
+        janu.receiveSalary(janu.getSalary());
+
+        System.out.println("Mahendra School has spend for salary to " + janu.getName()
+                + " and now has ₹" + MahendraSchool.getTotalMoneyEarned());
+
+        sakshi.receiveSalary(sakshi.getSalary());
+
+        System.out.println("Mahendra School has spend for salary to " + sakshi.getName()
+                + " and now has ₹" + MahendraSchool.getTotalMoneyEarned());
+
+        System.out.println(sekar);
+
+        kumar.receiveSalary(kumar.getSalary());
+
+        System.out.println(kumar);
+
+
+
     }
 }
 

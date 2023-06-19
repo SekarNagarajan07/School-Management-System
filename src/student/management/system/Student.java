@@ -47,6 +47,7 @@ public class Student {
 
     public void payFees(int fees) {
         feespaid += fees;
+        School.updateTotalMoneyEarned(feespaid);
     }
 
     /**
@@ -96,6 +97,12 @@ public class Student {
      */
     public  int getRemainingFees() {
        return feesTotal - feespaid;
+    }
+
+    @Override
+    public String toString() {
+        return "Student name :" + name +
+                " Total fees Paid ₹ " + feespaid ;
     }
 
 }
